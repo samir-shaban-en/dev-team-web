@@ -26,7 +26,6 @@
 .advantages-list-item {
     counter-increment: list-counter;
     max-width: 295px;
-    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 28px;
     line-height: 1;
@@ -39,7 +38,6 @@
 }
 
 .advantages-text {
-    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
