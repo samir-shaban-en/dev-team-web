@@ -20,12 +20,13 @@
     max-width: 335px;
     padding: 80px 20px;
     counter-reset: list-counter;
+    margin-bottom: 20px;
 }
 
 .advantages-list-item {
     counter-increment: list-counter;
     max-width: 295px;
-
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     font-size: 28px;
     line-height: 1;
@@ -38,11 +39,23 @@
 }
 
 .advantages-text {
+    font-family: "Inter", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: -0.02em;
     color: #fbfbfb;
     opacity: 0.8;
-    border-top: 2px solid #e01717;
+}
+
+.line {
+    border-radius: 18px;
+    width: 295px;
+    height: 2px;
+    background: rgba(251, 251, 251, 0.1);
+    margin: 18px 0;
+}
+
+.advan-img {
+    border-radius: 24px;
 }
