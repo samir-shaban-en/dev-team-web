@@ -48,7 +48,7 @@
 
 .line {
     border-radius: 18px;
-    width: 295px;
+    max-width: 295px;
     height: 2px;
     background: rgba(251, 251, 251, 0.1);
     margin: 18px 0;
@@ -56,4 +56,36 @@
 
 .advan-img {
     border-radius: 24px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+    .advantages-list {
+        max-width: 704px;
+        flex-flow: row wrap;
+        padding: 90px 32px;
+        margin-bottom: 32px;
+        gap: 44px 32px;
+        justify-content: center;
+
+    }
+
+    .advantages-list-item {
+        flex-basis: calc((100% - 32px) / 2);
+        font-size: 32px;
+        max-width: 305px;
+    }
+
+    .line {
+        max-width: 304px;
+    }
+
+    .advantages-text {
+        font-size: 13px;
+        line-height: 1.15;
+    }
+
+    .advan-img {
+        width: 704px;
+    }
 }
