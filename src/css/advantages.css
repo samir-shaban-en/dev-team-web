@@ -106,7 +106,7 @@
     }
 
     .advantages-list {
-        max-width: 716px;
+        min-width: 716px;
         padding: 90px 50px;
         margin-bottom: 0;
         margin-right: 32px;
@@ -119,6 +119,5 @@
 
     .advan-img {
         max-width: 432px;
-        object-fit: cover;
     }
 }
