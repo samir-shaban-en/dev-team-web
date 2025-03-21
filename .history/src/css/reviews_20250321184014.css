@@ -1,4 +1,4 @@
-/* ======== reviews ======== */
+/* ---------- reviews ---------- */
 .reviews {
   padding: 40px 0;
   background-color: #0e1823;
@@ -70,8 +70,8 @@
   height: 56px;
 }
 
-/* ---------- Контейнер із текстом ----------*/
-*/ .reviews-content {
+/* Контейнер с текстом */
+.reviews-content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +81,7 @@
   gap: 8px;
 }
 
-/* ---------- Ім'я користувача ----------*/
+/* Имя пользователя */
 .reviews-author {
   color: #040306;
   font-family: Inter, sans-serif;
@@ -90,8 +90,7 @@
   letter-spacing: -0.02em;
 }
 
-/* ----------Текст відгуку ----------*/
-
+/* Текст отзыва */
 .reviews-text {
   color: rgba(4, 3, 6, 0.4);
   font-family: Inter, sans-serif;
@@ -102,18 +101,16 @@
   letter-spacing: -0.02em;
 }
 
-/* ======== АДАПТИВНІСТЬ ======== */
+/* ======== АДАПТИВНОСТЬ ======== */
 
-/* ---------- Мобільні пристрої (до 768px) ---------- */
-
+/* Мобильные устройства (до 768px) */
 @media only screen and (max-width: 767px) {
   .reviews-list li:nth-last-child(-n + 2) {
     display: none;
   }
 }
 
-/* ---------- ПланиШЕТИ (768px - 1279px) ---------- */
-
+/* Планшеты (768px - 1279px) */
 @media screen and (min-width: 768px) {
   .reviews {
     padding: 75px 0;
@@ -138,8 +135,7 @@
   }
 }
 
-/* Планишти (768px - 1279px), ховаємо один відгук */
-
+/* Планшеты (768px - 1279px), скрываем один отзыв */
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
   .reviews-list li:last-child {
     display: none;
@@ -147,7 +143,6 @@
 }
 
 /* Десктоп (1280px+) */
-
 @media screen and (min-width: 1280px) {
   .reviews-title {
     max-width: 854px;
@@ -158,8 +153,7 @@
   }
 }
 
-/* Великі екрани (1440px+) */
-
+/* Большие экраны (1440px+) */
 @media screen and (min-width: 1440px) {
   .reviews-item {
     max-width: 376px;

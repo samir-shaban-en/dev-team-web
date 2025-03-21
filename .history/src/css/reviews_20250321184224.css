@@ -1,4 +1,4 @@
-/* ======== reviews ======== */
+/* ---------- reviews ---------- */
 .reviews {
   padding: 40px 0;
   background-color: #0e1823;
@@ -147,7 +147,6 @@
 }
 
 /* Десктоп (1280px+) */
-
 @media screen and (min-width: 1280px) {
   .reviews-title {
     max-width: 854px;
@@ -158,8 +157,7 @@
   }
 }
 
-/* Великі екрани (1440px+) */
-
+/* Большие экраны (1440px+) */
 @media screen and (min-width: 1440px) {
   .reviews-item {
     max-width: 376px;
