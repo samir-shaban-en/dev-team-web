@@ -11,10 +11,6 @@
     overflow: hidden;
 }
 
-.advantages {
-    margin: 80px 0;
-}
-
 .advantages-list {
     display: flex;
     flex-direction: column;
@@ -64,10 +60,6 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-
-    .advantages {
-        margin: 150px 0;
-    }
 
     .advantages-list {
         max-width: 704px;
