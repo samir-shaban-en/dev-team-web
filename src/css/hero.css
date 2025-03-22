@@ -42,8 +42,15 @@
   margin-bottom: 48px;
 }
 .hero__btn {
-  border-radius: 15px;
+  font-weight: 500;
+  font-size: 14px;
   padding: 14px 32px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+
+  border-radius: 15px;
+
   background-color: #1b414b;
   color: #fbfbfb;
   transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -65,6 +72,10 @@
   }
   .hero__btn {
     padding: 16px 40px;
+
+    font-size: 18px;
+
+    line-height: 1.1;
   }
   .hero {
     background: image-set(
