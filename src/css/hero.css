@@ -4,14 +4,19 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: image-set(
-      url('../img/hero/small.jpg') 1x,
-      url('../img/hero/medium.jpg') 2x
-    )
-    no-repeat center center/cover;
+  background: linear-gradient(
+      360deg,
+      rgba(17, 19, 31, 0.8) 15.05%,
+      rgba(17, 19, 31, 0.8) 75.3%,
+      rgba(17, 19, 31, 0.8) 98.27%
+    ),
+    image-set(
+        url('../img/hero/hero-mob.jpg') 1x,
+        url('../img/hero/hero-mob@2x.jpg') 2x
+      )
+      no-repeat center center/cover;
 }
-.container {
-}
+
 .hero__content {
   padding-block-start: 155px;
   padding-block-end: 180px;
@@ -47,21 +52,17 @@
   border-radius: 15px;
   padding: 14px 32px;
   background-color: #1b414b;
+  color: #fbfbfb;
+  transition: color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__btn:focus,
 .hero__btn:hover {
   background-color: #fbfbfb;
   color: #1b414b;
-  transition: background-color 0.5s;
 }
 @media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .hero__title {
     font-size: 60px;
   }
@@ -73,21 +74,34 @@
     padding: 16px 40px;
   }
   .hero {
-    background: image-set(url('../img/hero/medium.jpg')) no-repeat center
-      center/cover;
+    background: linear-gradient(
+        360deg,
+        rgba(17, 19, 31, 0.8) 15.05%,
+        rgba(17, 19, 31, 0.8) 75.3%,
+        rgba(17, 19, 31, 0.8) 98.27%
+      ),
+      image-set(
+          url('../img/hero/hero-tablet.jpg') 1x,
+          url('../img/hero/hero-tablet@2x.jpg') 2x
+        )
+        no-repeat center center/cover;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
   .hero__title {
     font-size: 80px;
   }
   .hero {
-    background: image-set(url(../img/hero/desctop.jpg)) no-repeat center
-      center/cover;
+    background: linear-gradient(
+        360deg,
+        rgba(17, 19, 31, 0.8) 15.05%,
+        rgba(17, 19, 31, 0.8) 75.3%,
+        rgba(17, 19, 31, 0.8) 98.27%
+      ),
+      image-set(
+          url('../img/hero/hero-desk.jpg') 1x,
+          url('../img/hero/hero-desk@2x.jpg') 2x
+        )
+        no-repeat center center/cover;
   }
 }

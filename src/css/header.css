@@ -90,10 +90,6 @@
     gap: 4px;
   }
 
-  .header-logo {
-    margin-right: 113px;
-  }
-
   .nav-link {
     width: 91px;
     height: 40px;
@@ -151,10 +147,6 @@
   .heder-container {
     padding: 0 30px;
     margin: 0 auto;
-  }
-
-  .header-logo {
-    margin-right: 296px;
   }
 
   .contacts-list {
