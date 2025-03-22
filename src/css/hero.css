@@ -1,16 +1,20 @@
 .hero {
-  padding-block-start: 155px;
-  padding-block-end: 180px;
   position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background: url('../img/hero/01.jpg') no-repeat center center/cover;
+  background: image-set(
+      url('../img/hero/small.jpg') 1x,
+      url('../img/hero/medium.jpg') 2x
+    )
+    no-repeat center center/cover;
 }
 .container {
 }
 .hero__content {
+  padding-block-start: 155px;
+  padding-block-end: 180px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -68,6 +72,10 @@
   .hero__btn {
     padding: 16px 40px;
   }
+  .hero {
+    background: image-set(url('../img/hero/medium.jpg')) no-repeat center
+      center/cover;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .container {
@@ -77,5 +85,9 @@
   }
   .hero__title {
     font-size: 80px;
+  }
+  .hero {
+    background: image-set(url(../img/hero/desctop.jpg)) no-repeat center
+      center/cover;
   }
 }
