@@ -39,7 +39,7 @@ img {
 /* ======== reviews ======== */
 
 .reviews {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
@@ -150,7 +150,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding-bottom: 75px;
+    padding-bottom: 150px;
   }
 
   .reviews-title {
