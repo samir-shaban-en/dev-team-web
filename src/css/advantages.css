@@ -44,6 +44,17 @@
     letter-spacing: -0.02em;
     color: #fbfbfb;
     opacity: 0.8;
+    max-width: 238px;
+}
+
+.advantages-text-big {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #fbfbfb;
+    opacity: 0.8;
+    max-width: 292px;
 }
 
 .line {
@@ -82,6 +93,11 @@
     }
 
     .advantages-text {
+        font-size: 13px;
+        line-height: 1.15;
+    }
+
+    .advantages-text-big {
         font-size: 13px;
         line-height: 1.15;
     }
