@@ -71,6 +71,8 @@ img {
   letter-spacing: -0.02em;
   text-align: center;
   color: #fbfbfb;
+
+  opacity: 0.4;
 }
 
 /* ---------- ПЕРЕЛІК ВІДГУКІВ ---------- */
