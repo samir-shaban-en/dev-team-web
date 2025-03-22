@@ -55,11 +55,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   .header-page {
     top: 32px;
   }
@@ -139,7 +134,7 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .header.container {
     padding-left: 100px;
     padding-right: 100px;
   }

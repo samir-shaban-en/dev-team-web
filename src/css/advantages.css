@@ -1,131 +1,123 @@
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advantages-list {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    background-color: #1b414b;
-    border-radius: 24px;
-    max-width: 335px;
-    padding: 80px 20px;
-    counter-reset: list-counter;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: #1b414b;
+  border-radius: 24px;
+  max-width: 335px;
+  padding: 80px 20px;
+  counter-reset: list-counter;
+  margin-bottom: 20px;
 }
 
 .advantages-list-item {
-    counter-increment: list-counter;
-    max-width: 295px;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 1;
-    letter-spacing: -0.05em;
-    color: #fbfbfb;
+  counter-increment: list-counter;
+  max-width: 295px;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  color: #fbfbfb;
 }
 
 .advantages-list-item::before {
-    content: counter(list-counter, decimal-leading-zero) " ";
+  content: counter(list-counter, decimal-leading-zero) ' ';
 }
 
 .advantages-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: #fbfbfb;
-    opacity: 0.8;
-    max-width: 238px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  opacity: 0.8;
+  max-width: 238px;
 }
 
-.advantages-text-big {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: -0.02em;
-    color: #fbfbfb;
-    opacity: 0.8;
-    max-width: 292px;
+.advantages-text.big {
+  max-width: 292px;
 }
 
 .line {
-    border-radius: 18px;
-    max-width: 295px;
-    height: 2px;
-    background: rgba(251, 251, 251, 0.1);
-    margin: 18px 0;
+  border-radius: 18px;
+  max-width: 295px;
+  height: 2px;
+  background: rgba(251, 251, 251, 0.1);
+  margin: 18px 0;
 }
 
 .advan-img {
-    border-radius: 24px;
+  border-radius: 24px;
 }
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
+  .advantages-list {
+    max-width: 704px;
+    flex-flow: row wrap;
+    padding: 90px 32px;
+    margin-bottom: 32px;
+    gap: 44px 32px;
+    justify-content: center;
+  }
 
-    .advantages-list {
-        max-width: 704px;
-        flex-flow: row wrap;
-        padding: 90px 32px;
-        margin-bottom: 32px;
-        gap: 44px 32px;
-        justify-content: center;
+  .advantages-list-item {
+    flex-basis: calc((100% - 32px) / 2);
+    font-size: 32px;
+    max-width: 305px;
+  }
 
-    }
+  .line {
+    max-width: 304px;
+  }
 
-    .advantages-list-item {
-        flex-basis: calc((100% - 32px) / 2);
-        font-size: 32px;
-        max-width: 305px;
-    }
+  .advantages-text {
+    font-size: 13px;
+    line-height: 1.15;
+  }
 
-    .line {
-        max-width: 304px;
-    }
+  .advantages-text-big {
+    font-size: 13px;
+    line-height: 1.15;
+  }
 
-    .advantages-text {
-        font-size: 13px;
-        line-height: 1.15;
-    }
-
-    .advantages-text-big {
-        font-size: 13px;
-        line-height: 1.15;
-    }
-
-    .advan-img {
-        width: 704px;
-    }
+  .advan-img {
+    width: 704px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
-    .box-advant {
-        display: flex;
-        flex-direction: row;
-    }
+  .box-advant {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .advantages-list {
-        min-width: 716px;
-        padding: 90px 50px;
-        margin-bottom: 0;
-        margin-right: 32px;
-        gap: 44px 32px;
-    }
+  .advantages-list {
+    min-width: 716px;
+    padding: 90px 50px;
+    margin-bottom: 0;
+    margin-right: 32px;
+    gap: 44px 32px;
+  }
 
-    .advantages-list-item {
-        max-width: 292px;
-    }
+  .advantages-list-item {
+    max-width: 292px;
+  }
 
-    .advan-img {
-        max-width: 432px;
-    }
+  .advan-img {
+    max-width: 432px;
+  }
 }
