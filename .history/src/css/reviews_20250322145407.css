@@ -1,43 +1,4 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
-}
-
-button {
-  cursor: pointer;
-  padding: 0;
-  border: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 /* ======== reviews ======== */
-
 .reviews {
   padding-bottom: 40px;
   text-align: center;
@@ -127,13 +88,13 @@ img {
 /* ----------Текст відгуку ----------*/
 
 .reviews-text {
-  font-weight: 400;
-  font-size: 16px;
-
-  line-height: 1.4;
-  letter-spacing: -0.02em;
-  text-align: center;
   color: rgba(4, 3, 6, 0.4);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: -0.02em;
 }
 
 /* ======== АДАПТИВНІСТЬ ======== */
@@ -150,7 +111,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .reviews {
-    padding-bottom: 75px;
+    padding: 75px 0;
   }
 
   .reviews-title {
@@ -165,13 +126,10 @@ img {
 
   .reviews-list {
     gap: 32px;
-    flex-wrap: nowrap;
   }
 
   .reviews-item {
-    width: calc((100% - 32px) / 2);
-
-    padding-inline: 28px;
+    max-width: 335px;
   }
 }
 
@@ -189,12 +147,17 @@ img {
   .reviews-title {
     max-width: 854px;
   }
+
   .reviews-list {
     gap: 26px;
   }
-  .reviews-item {
-    width: calc((100% - 2 * 26px) / 2);
+}
 
-    padding-inline: 36px;
+/* Великі екрани (1440px+) */
+
+@media screen and (min-width: 1440px) {
+  .reviews-item {
+    max-width: 376px;
+    padding: 32px 28px;
   }
 }
