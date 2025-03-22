@@ -116,4 +116,24 @@
     padding: 14px 75px;
     font-size: 18px;
   }
+
+  .rent-img {
+    height: 534px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .rent-container {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
+
+  .rent-form {
+    width: 472px;
+  }
+
+  .rent-img {
+    width: 658px;
+    height: 536px;
+  }
 }
