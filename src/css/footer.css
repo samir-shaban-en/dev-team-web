@@ -1,8 +1,11 @@
+
+
 .footer-title {
     border-radius: 24px 24px 0 0;
     background: #1b414b;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 355px;
 }
 
 .main-footer {
@@ -13,10 +16,10 @@
 }
 
 .logo-footer {
-        font-weight: 500;
-        font-size: 20px;
-        letter-spacing: -0.03em;
-        color: #fbfbfb;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.03em;
+    color: #fbfbfb;
 }
 
 .footer-menu-title {
@@ -47,6 +50,8 @@
     text-align:center;
     color: #fbfbfb;
     margin-bottom: 82px;
+    padding-left: 38px;
+    padding-right: 38px;
 }
 
 .footer-yacht-adventures {
