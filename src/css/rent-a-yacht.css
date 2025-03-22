@@ -1,0 +1,103 @@
+.rent-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+}
+
+.rent-title {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  color: #fbfbfb;
+}
+
+.rent-form {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.rent-inputs {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.rent-input-wrapper {
+  width: 100%;
+  border: 1px solid #fbfbfb33;
+  border-radius: 12px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+  padding: 18px;
+  background-color: transparent;
+  color: #fbfbfb;
+}
+
+.rent-input-wrapper:hover,
+.rent-input-wrapper:focus {
+  outline: none;
+  border: 1px solid #fbfbfb80;
+}
+
+.rent-input-wrapper::placeholder {
+  color: #fbfbfb66;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+
+.rent-input {
+}
+
+.rent-input::placeholder {
+}
+
+.rent-text-area {
+  min-height: 116px;
+  resize: none;
+}
+
+.rent-img {
+  width: 100%;
+  height: 412px;
+  border-radius: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../img/rent-img.jpg);
+}
+
+.rent-button {
+  border-radius: 15px;
+  padding: 14px 44px;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+  border-radius: 15px;
+  background-color: #1b414b;
+  color: #fbfbfb;
+}
+
+.rent-button:hover,
+.rent-button:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
