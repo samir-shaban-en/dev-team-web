@@ -137,18 +137,3 @@
     height: 536px;
   }
 }
-
-@media screen and (min-width: 1440px) {
-  .rent-container {
-    gap: 50px;
-  }
-
-  .rent-form {
-    width: 472px;
-  }
-
-  .rent-img {
-    min-width: 768px;
-    height: 536px;
-  }
-}
