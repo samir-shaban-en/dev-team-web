@@ -30,30 +30,33 @@
 
     <picture>
       <source
-        srcset="../img/advant/advant-desk.jpg 432w
-         ../img/advant/advant-desk2@x.jpg 864w
-        "
-        sizes="(min-width:1280px) 432px"
-      />
-      <source
         srcset="
-          ../img/advant/advant-desk.jpg    704w,
-          ../img/advant/advant-des@2x.jpg 1708w
+          ../img/advant/advant-desk.jpg    1x,
+          ../img/advant/advant-desk@2x.jpg 2x
         "
-        sizes="(min-width:768px) 704px"
+        media="(min-width: 1280px)"
       />
 
       <source
         srcset="
-          ../img/advant/advant-mob.jpg    335w,
-          ../img/advant/advant-mob@2x.jpg 670w
+          ../img/advant/advant-tabl.jpg    1x,
+          ../img/advant/advant-tabl@2x.jpg 2x
         "
-        sizes="(min-width:768px) 335px"
+        media="(min-width: 768px)"
+      />
+
+      <source
+        srcset="
+          ../img/advant/advant-mob.jpg    1x,
+          ../img/advant/advant-mob@2x.jpg 2x
+        "
+        media="(max-width: 767px)"
       />
       <img
-        class="rent-img"
+        class="advan-img"
         src="../img/advant/advant-mob.jpg"
         alt="A huge white Jaht inside"
+        width="335px"
       />
     </picture>
   </div>
