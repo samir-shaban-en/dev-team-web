@@ -1,0 +1,160 @@
+/* ---------- reviews ---------- */
+.reviews {
+  padding: 40px 0;
+  background-color: #0e1823;
+  text-align: center;
+}
+
+/* Заголовок секции */
+.reviews-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 40px;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.reviews-title {
+  color: #fbfbfb;
+  font-family: Inter, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  text-align: center;
+  max-width: 335px;
+}
+
+.reviews-description {
+  font-family: 'Inter', sans-serif;
+  color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  max-width: 571px;
+  height: 36px;
+  letter-spacing: -0.02em;
+  opacity: 0.4;
+  font-size: clamp(12px, 2vw, 14px);
+  max-width: clamp(280px, 80%, 571px);
+}
+
+/* ======== СПИСОК ОТЗЫВОВ ======== */
+.reviews-list {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+/* ======== КАРТОЧКА ОТЗЫВА ======== */
+.reviews-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 392px;
+  height: 282px;
+  padding: 32px 36px;
+  border-radius: 24px;
+  background-color: #fbfbfb;
+}
+
+/* Фото пользователя */
+.reviews-avatar {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+/* Контейнер с текстом */
+.reviews-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  width: 320px;
+  height: 138px;
+  gap: 8px;
+}
+
+/* Имя пользователя */
+.reviews-author {
+  color: #040306;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+/* Текст отзыва */
+.reviews-text {
+  color: rgba(4, 3, 6, 0.4);
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: -0.02em;
+}
+
+/* ======== АДАПТИВНОСТЬ ======== */
+
+/* Мобильные устройства (до 768px) */
+@media only screen and (max-width: 767px) {
+  .reviews-list li:nth-last-child(-n + 2) {
+    display: none;
+  }
+}
+
+/* Планшеты (768px - 1279px) */
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding: 75px 0;
+  }
+
+  .reviews-title {
+    font-size: 48px;
+    max-width: 704px;
+  }
+
+  .reviews-description {
+    font-size: 14px;
+    max-width: 571px;
+  }
+
+  .reviews-list {
+    gap: 32px;
+  }
+
+  .reviews-item {
+    max-width: 335px;
+  }
+}
+
+/* Планшеты (768px - 1279px), скрываем один отзыв */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .reviews-list li:last-child {
+    display: none;
+  }
+}
+
+/* Десктоп (1280px+) */
+@media screen and (min-width: 1280px) {
+  .reviews-title {
+    max-width: 854px;
+  }
+
+  .reviews-list {
+    gap: 26px;
+  }
+}
+
+/* Большие экраны (1440px+) */
+@media screen and (min-width: 1440px) {
+  .reviews-item {
+    max-width: 376px;
+    padding: 32px 28px;
+  }
+}
