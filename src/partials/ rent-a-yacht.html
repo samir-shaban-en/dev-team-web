@@ -30,7 +30,27 @@
         </div>
         <button type="submit" class="rent-button">Send</button>
       </form>
-      <div class="rent-img"></div>
+
+      <picture>
+        <source
+          srcset="../img/rent/rent-desk.jpg 1x, ../img/rent/rent-desk@2x.jpg 2x"
+          media="(min-width:1280px)"
+        />
+        <source
+          srcset="../img/rent/rent-tab.jpg 1x, ../img/rent/rent-tab@2x.jpg 2x"
+          media="(min-width:768px)"
+        />
+
+        <source
+          srcset="../img/rent/rent-mob.jpg 1x, ../img/rent/rent-mob@2x.jpg 2x"
+          media="(max-width:767px)"
+        />
+        <img
+          class="rent-img"
+          src="../img/rent/rent-mob.jpg"
+          alt="A huge white Jaht"
+        />
+      </picture>
     </div>
   </div>
 </section>
