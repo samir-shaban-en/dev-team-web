@@ -1,5 +1,4 @@
-
-.container {
+.footer .container {
   padding-inline: 10px;
 }
 
@@ -131,7 +130,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .foote r.container {
     padding-inline: 16px;
   }
   .logo-footer {
@@ -168,7 +167,7 @@
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
+  .footer .container {
     padding-left: 25px;
     padding-right: 25px;
   }
@@ -180,4 +179,3 @@
     max-width: 640px;
   }
 }
-
