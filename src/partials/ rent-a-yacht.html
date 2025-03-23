@@ -1,0 +1,36 @@
+<section class="rent-section">
+  <div class="container">
+    <div class="rent-container">
+      <form class="rent-form">
+        <h3 class="rent-title">Rent a yacht now</h3>
+        <div class="rent-inputs">
+          <input
+            type="text"
+            class="rent-input-wrapper"
+            placeholder="Full Name"
+          />
+          <input
+            type="email"
+            class="rent-input-wrapper"
+            placeholder="Email"
+            required
+            pattern=" ([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          />
+          <input
+            type="tel"
+            class="rent-input-wrapper"
+            placeholder="Phone number"
+            required
+            pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+          />
+          <textarea
+            class="rent-text-area rent-input-wrapper"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+        <button type="submit" class="rent-button">Send</button>
+      </form>
+      <div class="rent-img"></div>
+    </div>
+  </div>
+</section>
