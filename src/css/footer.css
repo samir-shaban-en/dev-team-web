@@ -1,0 +1,167 @@
+.footer-title {
+    border-radius: 24px 24px 0 0;
+    background: #1b414b;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    margin-bottom: 80px;
+}
+
+.logo-footer {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.03em;
+    color: #fbfbfb;
+    margin-top: 40px;
+}
+
+.footer-menu-title {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.footer-menu-icon {
+    font-size: 9px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fbfbfb;
+    border-radius: 8px;
+    width: 66px;
+    height: 40px;
+    background: rgba(251, 251, 251, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text-title {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+    margin-top: 40px;
+    margin-bottom: 82px;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.footer-yacht-adventures {
+    padding-bottom: 20px;
+    margin: auto;
+}
+
+.footer-text,
+.footer-privacy {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: rgba(251, 251, 251, 0.4);
+}
+
+.footer-privacy {
+    margin-left: 20px;
+}
+
+.social-footer {
+    margin-bottom: 40px;
+    margin: auto;
+}
+
+.icon-menu-footer {
+    display: flex;
+    gap: 8px;
+}
+
+.icon-social-footer {
+    fill: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-title {
+        padding-left: 48px;
+        padding-right: 48px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .main-footer {
+        padding-top: 50px;
+        margin-bottom: 96px;
+    }
+
+    .logo-footer {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .footer-text-title {
+        font-size: 32px;
+        margin-bottom: 99px;
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+
+    .footer-text,
+    .footer-privacy {
+        font-size: 14px;
+        line-height: 1.18;
+    }
+
+    .footer-privacy {
+        margin-left: 32px;
+    }
+
+    .social-footer {
+        display: flex;
+        margin: 0;
+    }
+
+    .icon-menu-footer {
+        display: flex;
+        gap: 8px;
+        padding-top: 50px;
+        margin-bottom: 96px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .footer-title {
+        padding-left: 75px;
+        padding-right: 75px;
+    }
+
+    .main-footer {
+        padding-top: 50px;
+        margin-bottom: 96px;
+    }
+
+    .footer-text-title {
+        margin-top: 0;
+        font-size: 32px;
+    }
+
+    .footer-text-title {
+        font-size: 32px;
+        padding-left: 268px;
+        padding-right: 268px;
+    }
+
+    .footer-text,
+    .footer-privacy {
+        font-size: 14px;
+        line-height: 1.18;
+    }
+}
