@@ -14,14 +14,32 @@
 
     <ul class="reviews-list">
       <li class="reviews-item">
-        <img
-          srcset="/img/reviews/john-wax.jpg 1x, /img/reviews/john-wax@2x.jpg 2x"
-          src="/img/reviews/john-wax.jpg"
-          alt="John Wax"
-          width="56"
-          height="56"
-          class="reviews-avatar"
-        />
+        <picture>
+          <!-- WebP зображення -->
+          <source
+            srcset="
+              /img/webp/reviews/john-wax.webp    1x,
+              /img/webp/reviews/john-wax@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- JPG зображення (fallback) -->
+          <source
+            srcset="
+              /img/reviews/john-wax.jpg    1x,
+              /img/reviews/john-wax@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <!-- Резервний <img>, якщо <picture> не підтримується -->
+          <img
+            src="/img/reviews/john-wax.jpg"
+            alt="John Wax"
+            width="56"
+            height="56"
+            class="reviews-avatar"
+          />
+        </picture>
         <div class="reviews-content">
           <h3 class="reviews-author">John Wax</h3>
           <p class="reviews-text">
@@ -33,17 +51,32 @@
       </li>
 
       <li class="reviews-item">
-        <img
-          srcset="
-            /img/reviews/victoria-romashenko.jpg    1x,
-            /img/reviews/victoria-romashenko@2x.jpg 2x
-          "
-          src="/img/reviews/victoria-romashenko.jpg"
-          alt="Victoria Romashenko"
-          width="56"
-          height="56"
-          class="reviews-avatar"
-        />
+        <picture>
+          <!-- WebP зображення -->
+          <source
+            srcset="
+              /img/webp/reviews/victoria-romashenko.webp    1x,
+              /img/webp/reviews/victoria-romashenko@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- JPG зображення (fallback) -->
+          <source
+            srcset="
+              /img/reviews/victoria-romashenko.jpg    1x,
+              /img/reviews/victoria-romashenko@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <!-- Резервне <img> для старих браузерів -->
+          <img
+            src="/img/reviews/victoria-romashenko.jpg"
+            alt="Victoria Romashenko"
+            width="56"
+            height="56"
+            class="reviews-avatar"
+          />
+        </picture>
         <div class="reviews-content">
           <h3 class="reviews-author">Victoria Romashenko</h3>
           <p class="reviews-text">
@@ -55,17 +88,32 @@
       </li>
 
       <li class="reviews-item">
-        <img
-          srcset="
-            /img/reviews/ihor-trachuk.jpg    1x,
-            /img/reviews/ihor-trachuk@2x.jpg 2x
-          "
-          src="/img/reviews/ihor-trachuk.jpg"
-          alt="Ihor Trachuk"
-          width="56"
-          height="56"
-          class="reviews-avatar"
-        />
+        <picture>
+          <!-- WebP зображення -->
+          <source
+            srcset="
+              /img/webp/reviews/ihor-trachuk.webp    1x,
+              /img/webp/reviews/ihor-trachuk@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- JPG зображення (fallback) -->
+          <source
+            srcset="
+              /img/reviews/ihor-trachuk.jpg    1x,
+              /img/reviews/ihor-trachuk@2x.jpg 2x
+            "
+            type="image/jpeg"
+          />
+          <!-- Резервне <img> для старих браузерів -->
+          <img
+            src="/img/reviews/ihor-trachuk.jpg"
+            alt="Ihor Trachuk"
+            width="56"
+            height="56"
+            class="reviews-avatar"
+          />
+        </picture>
         <div class="reviews-content">
           <h3 class="reviews-author">Ihor Trachuk</h3>
           <p class="reviews-text">

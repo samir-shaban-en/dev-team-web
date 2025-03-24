@@ -33,14 +33,37 @@
 
       <picture>
         <source
+          srcset="
+            ./img/webp/rent/rent-desk.webp    1x,
+            ./img/webp/rent/rent-desk@2x.webp 2x
+          "
+          media="(min-width:1280px)"
+          type="image/webp"
+        />
+        <source
           srcset="./img/rent/rent-desk.jpg 1x, ./img/rent/rent-desk@2x.jpg 2x"
           media="(min-width:1280px)"
+        />
+        <source
+          srcset="
+            ./img/webp/rent/rent-tab.webp    1x,
+            ./img/webp/rent/rent-tab@2x.webp 2x
+          "
+          media="(min-width:768px)"
+          type="image/webp"
         />
         <source
           srcset="./img/rent/rent-tab.jpg 1x, ./img/rent/rent-tab@2x.jpg 2x"
           media="(min-width:768px)"
         />
-
+        <source
+          srcset="
+            ./img/webp/rent/rent-mob.webp    1x,
+            ./img/webp/rent/rent-mob@2x.webp 2x
+          "
+          media="(max-width:767px)"
+          type="image/webp"
+        />
         <source
           srcset="./img/rent/rent-mob.jpg 1x, ./img/rent/rent-mob@2x.jpg 2x"
           media="(max-width:767px)"
