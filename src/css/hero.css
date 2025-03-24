@@ -3,7 +3,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-image: url('../img/hero/hero-mob.jpg');
+  background-image: url('/img/hero/hero-mob.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,41 +15,82 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 767px) and (min-resolution: 2x) {
+/* WebP для мобільних */
+@supports (background-image: url('/img/webp/hero/hero-mob.webp')) {
   .hero {
-    background-image: url('../img/hero/hero-mob@2x.jpg');
+    background-image: url('/img/webp/hero/hero-mob.webp');
   }
 }
+
+/* Retina для мобільних */
+@media screen and (max-width: 767px) and (min-resolution: 2x) {
+  .hero {
+    background-image: url('/img/hero/hero-mob@2x.jpg');
+  }
+
+  @supports (background-image: url('/img/webp/hero/hero-mob@2x.webp')) {
+    .hero {
+      background-image: url('/img/webp/hero/hero-mob@2x.webp');
+    }
+  }
+}
+
+/* WebP для планшетів */
 @media only screen and (min-width: 768px) {
   .hero {
-    background-image: url('../img/hero/hero-tabl.jpg');
-
+    background-image: url('/img/hero/hero-tabl.jpg');
     padding-top: 280px;
     padding-bottom: 282px;
   }
-}
-@media screen and (min-width: 768px) and (min-resolution: 2x) {
-  .hero {
-    background-image: url('../img/hero/hero-tabl@2x.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+  @supports (background-image: url('/img/webp/hero/hero-tabl.webp')) {
+    .hero {
+      background-image: url('/img/webp/hero/hero-tabl.webp');
+    }
   }
 }
 
+/* Retina для планшетів */
+@media screen and (min-width: 768px) and (min-resolution: 2x) {
+  .hero {
+    background-image: url('/img/hero/hero-tabl@2x.jpg');
+  }
+
+  @supports (background-image: url('/img/webp/hero/hero-tabl@2x.webp')) {
+    .hero {
+      background-image: url('/img/webp/hero/hero-tabl@2x.webp');
+    }
+  }
+}
+
+/* WebP для десктопів */
 @media only screen and (min-width: 1280px) {
   .hero {
-    background-image: url('../img/hero/hero-desk.jpg');
+    background-image: url('/img/hero/hero-desk.jpg');
     padding-top: 236px;
     padding-bottom: 215px;
   }
-}
 
-@media screen and (min-width: 1280px) and (min-resolution: 2x) {
-  .hero {
-    background-image: url('../img/hero/hero-desk@2x.jpg');
+  @supports (background-image: url('/img/webp/hero/hero-desk.webp')) {
+    .hero {
+      background-image: url('/img/webp/hero/hero-desk.webp');
+    }
   }
 }
+
+/* Retina для десктопів */
+@media screen and (min-width: 1280px) and (min-resolution: 2x) {
+  .hero {
+    background-image: url('/img/hero/hero-desk@2x.jpg');
+  }
+
+  @supports (background-image: url('/img/webp/hero/hero-desk@2x.webp')) {
+    .hero {
+      background-image: url('/img/webp/hero/hero-desk@2x.webp');
+    }
+  }
+}
+
 .hero__content {
   display: flex;
   flex-direction: column;
@@ -65,9 +106,11 @@
   text-align: center;
   color: #fbfbfb;
 }
+
 .hero__title:not(:last-child) {
   margin-bottom: 24px;
 }
+
 .hero__text p {
   max-inline-size: 600px;
   font-weight: 300;
@@ -76,9 +119,11 @@
   text-align: center;
   color: rgba(251, 251, 251, 0.7);
 }
+
 .hero__text:not(:last-child) {
   margin-bottom: 48px;
 }
+
 .hero__btn {
   border-radius: 15px;
   padding: 14px 32px;
@@ -93,14 +138,17 @@
   background-color: #fbfbfb;
   color: #1b414b;
 }
+
 @media only screen and (min-width: 768px) {
   .hero__title {
     font-size: 60px;
   }
+
   .hero__text p {
     font-size: 16px;
     line-height: 1.4;
   }
+
   .hero__btn {
     padding: 16px 40px;
   }
