@@ -1,5 +1,5 @@
 .our-yachts-section {
-  padding-bottom: 40px;
+  padding-bottom: 80px;
 }
 
 .our-yachts-section-title {
@@ -180,7 +180,7 @@
 
 @media screen and (min-width: 768px) {
   .our-yachts-section {
-    padding-bottom: 72px;
+    padding-bottom: 150px;
   }
   .our-yachts-section-title {
     max-width: 645px;
