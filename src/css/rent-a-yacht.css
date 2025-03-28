@@ -10,7 +10,6 @@
 }
 
 .rent-title {
-  font-family: Inter;
   font-weight: 500;
   font-size: 28px;
   line-height: 28px;
@@ -39,7 +38,7 @@
   width: 100%;
   border: 1px solid #fbfbfb33;
   border-radius: 12px;
-  font-family: Inter;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -58,7 +57,7 @@
 
 .rent-input-wrapper::placeholder {
   color: #fbfbfb66;
-  font-family: Inter;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -73,7 +72,7 @@
 .rent-button {
   border-radius: 15px;
   padding: 14px 44px;
-  font-family: Inter;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 18px;
