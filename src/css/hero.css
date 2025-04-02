@@ -139,6 +139,8 @@
 @media only screen and (min-width: 768px) {
   .hero__title {
     font-size: 60px;
+
+    max-width: 550px;
   }
 
   .hero__text p {
@@ -154,5 +156,7 @@
 @media only screen and (min-width: 1280px) {
   .hero__title {
     font-size: 80px;
+
+    max-width: 1000px;
   }
 }
